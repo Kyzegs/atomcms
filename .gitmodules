@@ -1,0 +1,3 @@
+[submodule "public/react-nitro"]
+	path = public/react-nitro
+	url = https://github.com/billsonnn/nitro-react.git
