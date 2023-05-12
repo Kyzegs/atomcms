@@ -1,6 +1,6 @@
 [submodule "public/nitro-react"]
 	path = public/nitro-react
-	url = https://github.com/billsonnn/nitro-react.git
+	url = https://github.com/Kyzegs/nitro-react.git
 [submodule "public/nitro-assets"]
 	path = public/nitro-assets
 	url = https://github.com/Kyzegs/nitro-assets.git
