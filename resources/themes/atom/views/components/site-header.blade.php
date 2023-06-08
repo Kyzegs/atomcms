@@ -12,7 +12,7 @@
                     <div class="absolute bg-white w-6 h-6 -left-1 rotate-45 dark:bg-gray-900"></div>
 
                     <span class="relative">
-                        {{ __(':online :hotel online', ['online' => DB::table('users')->where('online', '1')->count(), 'hotel' => setting('hotel_name')]) }}
+                        {{ __(":online :hotel's online", ['online' => DB::table('users')->where('online', '1')->count(), 'hotel' => setting('hotel_name')]) }}
                     </span>
                 </div>
             </div>
@@ -22,7 +22,7 @@
             <flex class="flex gap-x-4">
                 <a data-turbolinks="false" href="{{ route('nitro-client') }}">
                     <button class="hidden md:block text-lg relative dark:bg-gray-900 dark:text-white rounded-full py-2 px-6 bg-white bg-opacity-90 transition duration-300 ease-in-out hover:bg-opacity-100 text-black font-semibold">
-                        {{ __('Nitro client') }}
+                        {{ setting('hotel_name') }}
                     </button>
                 </a>
 

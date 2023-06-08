@@ -17,7 +17,7 @@ class WebsiteSettingsSeeder extends Seeder
             ],
             [
                 'key' => 'hotel_name',
-                'value' => 'Habbo',
+                'value' => 'Sebbo',
                 'comment' => 'Specifies the name of the hotel',
             ],
             [
@@ -77,12 +77,12 @@ class WebsiteSettingsSeeder extends Seeder
             ],
             [
                 'key' => 'discord_invitation_link',
-                'value' => 'https://discord.gg/rX3aShUHdg',
+                'value' => 'https://discord.gg/BpUmVGCF26',
                 'comment' => 'The link used to invite people to your Discord server',
             ],
             [
                 'key' => 'discord_widget_id',
-                'value' => '1008150166521524264',
+                'value' => '1106553164951453817',
                 'comment' => 'The Discord widget ID you want to show on the CMS',
             ],
             [
@@ -152,7 +152,7 @@ class WebsiteSettingsSeeder extends Seeder
             ],
             [
                 'key' => 'cms_logo',
-                'value' => '/assets/images/kasja_atomlogo.png',
+                'value' => '/assets/images/sebbo.gif',
                 'comment' => 'Default logo for the cms',
             ],
             [
@@ -177,7 +177,7 @@ class WebsiteSettingsSeeder extends Seeder
             ],
             [
                 'key' => 'cms_color_mode',
-                'value' => 'light',
+                'value' => 'dark',
                 'comment' => 'Determines the color mode of the CMS (light = normal, dark = dark mode)',
             ],
             [
@@ -218,7 +218,7 @@ class WebsiteSettingsSeeder extends Seeder
         ];
 
         foreach ($settings as $setting) {
-            WebsiteSetting::firstOrCreate(['key' => $setting['key']], [
+            WebsiteSetting::updateOrCreate(['key' => $setting['key']], [
                 'key' => $setting['key'],
                 'value' => $setting['value'],
                 'comment' => $setting['comment'],
